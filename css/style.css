@@ -8,23 +8,22 @@
 /* Color mode HSL (Hue, Saturation, Lightness) */
 
 /* Primary Colors */
---first-color: hsl(196, 100%, 50%); /* Green (Primary color) */
---first-color-alt: hsl(192, 99%, 68%); /* Slightly darker green for hover states */
---first-color-light: hsl(193, 86%, 80%); /* Lighter green for highlights */
-
+--first-color: hsl(196, 100%, 50%); 
+--first-color-alt: hsl(192, 99%, 68%); 
+--first-color-light: hsl(193, 86%, 80%); 
 /* Neutral Colors */
---title-color: hsl(228, 8%, 98%); /* Light white for titles */
---text-color: hsl(228, 8%, 70%); /* Light gray text */
---white-color: hsl(228, 8%, 98%); /* Neutral white */
---black-color: hsl(228, 6%, 4%); /* Almost black */
---body-color: hsl(228, 6%, 8%); /* Dark body background */
---container-color: hsl(228, 6%, 12%); /* Slightly lighter container background */
+--title-color: hsl(228, 8%, 98%); 
+--text-color: hsl(228, 8%, 70%); 
+--white-color: hsl(228, 8%, 98%); 
+--black-color: hsl(228, 6%, 4%); 
+--body-color: hsl(228, 6%, 8%); 
+--container-color: hsl(228, 6%, 12%); 
 
 /* Additional Shadows and Effects */
---shadow-img: 0 0 48px hsla(196, 85%, 55%, 0.4); /* Yellow shadow effect */
+--shadow-img: 0 0 48px hsla(196, 85%, 55%, 0.4); 
 --gradient-card: linear-gradient(180deg, 
                               rgb(82, 121, 122), 
-                              rgb(51, 184, 204)); /* Yellow gradient */
+                              rgb(51, 184, 204)); 
 
 
 /*=============== Font and Typography ===============*/
