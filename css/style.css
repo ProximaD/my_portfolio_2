@@ -158,6 +158,9 @@ img {
     position: fixed;
     top: 0;
     right: -100%;
+    background-color: hsla(228, 24%, 6%, .2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     width: 80%;
     height: 100%;
     padding: 6rem 3rem 0;
@@ -173,7 +176,8 @@ img {
 
 .nav__link{
     color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
     transition: color .4s;
 }
 
