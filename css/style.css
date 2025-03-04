@@ -1,0 +1,242 @@
+/*============================================ GOOGLE FONT =====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --header-height: 3.5rem;
+
+/*============================= Colors ================================*/
+/* Color mode HSL (Hue, Saturation, Lightness) */
+
+/* Primary Colors */
+--first-color: hsl(196, 100%, 50%); /* Green (Primary color) */
+--first-color-alt: hsl(192, 99%, 68%); /* Slightly darker green for hover states */
+--first-color-light: hsl(193, 86%, 80%); /* Lighter green for highlights */
+
+/* Neutral Colors */
+--title-color: hsl(228, 8%, 98%); /* Light white for titles */
+--text-color: hsl(228, 8%, 70%); /* Light gray text */
+--white-color: hsl(228, 8%, 98%); /* Neutral white */
+--black-color: hsl(228, 6%, 4%); /* Almost black */
+--body-color: hsl(228, 6%, 8%); /* Dark body background */
+--container-color: hsl(228, 6%, 12%); /* Slightly lighter container background */
+
+/* Additional Shadows and Effects */
+--shadow-img: 0 0 48px hsla(196, 85%, 55%, 0.4); /* Yellow shadow effect */
+--gradient-card: linear-gradient(180deg, 
+                              rgb(82, 121, 122), 
+                              rgb(51, 184, 204)); /* Yellow gradient */
+
+
+/*=============== Font and Typography ===============*/
+/* .5rem = 8px | 1rem = 16px ...*/
+--body-font: "Quicksand", sans-serif;
+--biggest-font-size: 2.25rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+
+/*=============== Font weight ===============*/
+--font-regular: 400;
+--font-semi-bold: 600;
+--font-bold: 700;
+
+/*=============== z index ===============*/
+--z-tooltip: 10;
+--z-fixed: 100;
+
+/*=============== Responsive Typography ===============*/
+
+@media screen and (min-width: 1152px){
+    :root{
+        --h1-font-size: 2.25rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .section {
+    padding-block: 5rem 1rem;
+  }
+  
+  .section__title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .main {
+    overflow: hidden;
+  }
+
+/*===================================== HEADER =======================================*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+}
+
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__close,
+.nav__toggle{
+    display: flex;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.nav__logo{
+    font-weight: var(--font-semi-bold);
+    column-gap: .25rem;
+    align-items: center;
+}
+
+/*Navigation for mobile devices*/
+@media screen and (max-width: 1150px){
+    .nav__menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right .4s;
+    }   
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.nav__link{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color .4s;
+}
+
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.nav__close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.25rem;
+}
+
+/*Show Menu*/
+.show-menu{
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
