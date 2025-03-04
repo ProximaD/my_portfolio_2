@@ -199,11 +199,18 @@ img {
     row-gap: 2rem;
   }
   
-  .home__img{
+  .home__img {
     width: 270px;
+    height: 270px; 
+    border-radius: 50%; 
     filter: drop-shadow(var(--shadow-img));
     justify-self: center;
-  }
+    object-fit: cover; 
+    object-position: top;
+    border: 5px solid var(--white-color);
+}
+
+
   
   .home__data{
     text-align: center;
@@ -243,7 +250,29 @@ img {
     background-color: var(--first-color-alt);
   }
 
+  /*=================================== ABOUT =======================================*/
+.about__container{
+    padding-top: 2.5rem;
+    row-gap: 2rem;
+}
 
+.about__data{
+    text-align: center;
+}
+
+.about__title{
+    font-family: var(--body-color);
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 1rem;
+}
+
+
+.about__description{
+    font-family: var(--body-font);
+    font-size: var(--h2-font-size);
+    margin-bottom: 3rem;
+}
 
 
 
