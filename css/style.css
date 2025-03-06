@@ -417,6 +417,7 @@ img {
 .contact__description span{
     color: var(--first-color-alt);
     font-weight: var(--font-bold);
+    font-size: var(--biggest-font-size);
 }
 
 .contact__buttons{
