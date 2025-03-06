@@ -217,7 +217,7 @@ img {
 .home__container {
   display: grid;
   gap: 2rem;
-  padding: 1rem;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -453,7 +453,7 @@ img {
 
 /*========================================= FOOTER ============================================*/
 .footer{
-  padding-block: 4rem 2rem;
+  padding-block: 2rem 1rem;
   background-color: var(--body-color);
   color: var(--text-color);
 }
@@ -462,7 +462,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .footer__logo{
@@ -472,25 +472,25 @@ img {
   color: var(--title-color);
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
 }
 
 .footer__description{
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .footer__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .footer__title{
   font-size: var(--normal-font-size);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .footer__links{
@@ -512,7 +512,7 @@ img {
 
 .footer__social{
   display: flex;
-  column-gap: .75rem;
+  column-gap: .5rem;
 }
 
 .footer__social-link{
@@ -528,7 +528,7 @@ img {
 
 .footer__copy{
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   font-size: var(--small-font-size);
 }
@@ -589,7 +589,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    padding: 2rem;
+    padding: 6rem 2rem;
   }
 
   .home__img {
@@ -653,6 +653,36 @@ img {
     padding: 10px 20px;
   }
   
+  .footer__container {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+  }
+
+  .footer__links {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    row-gap: 0; 
+    column-gap: 2rem; 
+  }
+
+  .footer__description,
+  .footer__title,
+  .footer__copy {
+    text-align: center;
+  }
+
 }
 
 
