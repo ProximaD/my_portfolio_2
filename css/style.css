@@ -1,5 +1,6 @@
 /*============================================ GOOGLE FONT =====================================*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 :root{
     --header-height: 3.5rem;
@@ -29,6 +30,7 @@
 /*=============== Font and Typography ===============*/
 /* .5rem = 8px | 1rem = 16px ...*/
 --body-font: "Quicksand", sans-serif;
+--accent-font: "Orbitron", sans-serif;
 --biggest-font-size: 2.25rem;
 --h1-font-size: 1.5rem;
 --h2-font-size: 1.25rem;
@@ -221,11 +223,13 @@ img {
 
 .home__img {
   width: 100%;
-  height: auto;
+  max-width: 300px; /* Set a maximum width for the image */
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
   border: 5px solid var(--white-color);
+  margin-top: 2rem;
 }
 
 .home__data {
@@ -240,6 +244,9 @@ img {
 
 .home__title span {
   color: var(--first-color);
+  font-family: var(--accent-font);
+  font-weight: var(--font-bold);
+  font-size: 3.5rem;
 }
 
 .home__buttons {
@@ -518,6 +525,80 @@ img {
 }
 
 
+/*========================================= MEDIA QUERIES ==================================*/
+/* Media Queries for Larger Screens */
+@media screen and (min-width: 1150px) {
+  .header {
+    background-color: transparent;
+    padding: 1rem 2rem;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__logo {
+    font-size: var(--h1-font-size);
+  }
+
+  .nav__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0;
+    transition: none;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__link {
+    font-size: var(--normal-font-size);
+  }
+
+  .nav__close {
+    display: none;
+  }
+
+  .home__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .home__img {
+    width: 50%;
+    max-width: 300px; /* Set a maximum width for the image */
+    height: 300px;
+    margin-top: 4rem; /* Remove margin-top for better alignment */
+  }
+
+  .home__data {
+    text-align: left; /* Align text to the left for better readability */
+  }
+
+  .home__buttons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
 
 
 
