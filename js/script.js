@@ -38,3 +38,11 @@ const blurHeader = () =>{
                        : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
+
+
+/*=============== GSAP ANIMATION ===============*/
+gsap.from('.home__container', 1.5, {opacity: 0, y: 150, delay: .1})
+gsap.from('.home__data', 1.8, {opacity: 0, x: 100, delay: .2})
+gsap.from('.about__description', 1.8, {opacity: 0, y: 100, delay: .2})
+gsap.from('.portfolio__container', 1.5, {opacity: 0, x: 150, delay: .3})
+gsap.from('.contact__buttons', 1.5, {opacity: 0, y: 80, delay: .3})

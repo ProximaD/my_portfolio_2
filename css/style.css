@@ -310,8 +310,15 @@ img {
 .about__description {
   font-size: var(--h2-font-size);
   font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
   margin-bottom: 3rem;
   width: 100%;
+}
+
+.about__description span {
+  color: var(--first-color);
+  font-family: var(--accent-font);
+  font-weight: var(--font-semi-bold);
 }
 
 /*=============================== PORTFOLIO ==============================*/
